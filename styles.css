@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* BODY */
+
+body {
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* MAIN */
+
+main {
+  background-color: #fff;
+  border-radius: 2%;
+}
+
+.text {
+  display: grid;
+  text-align: left;
+  row-gap: 7%;
+}
+
+.item-type {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.info {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35rem;
+}
+
+.price {
+  color: hsl(158, 36%, 37%);
+  display: table-cell;
+  font-family: "Fraunces", serif;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  display: table-cell;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  padding-left: 10%;
+  text-decoration: line-through;
+  vertical-align: middle;
+}
+
+.cart {
+  color: #fff;
+  font-weight: bolder;
+  transform: translate(0px, 2px);
+  padding-right: 5%;
+}
+
+.button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  height: 45px;
+  vertical-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+  .perfume-tablet-desktop {
+    display: none;
+  }
+
+  .perfume-smartphone {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 350px;
+  }
+
+  .text {
+    max-width: 325px;
+    margin: 7% 5% 25% 7%;
+  }
+
+  .item-type {
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .cart {
+    color: #fff;
+    font-weight: bolder;
+    padding-right: 4%;
+  }
+
+  .button {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .perfume-smartphone {
+    display: none;
+  }
+
+  .perfume-tablet-desktop {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    max-width: 275px;
+  }
+
+  .text {
+    max-width: 550px;
+    margin: 5% 5% 5% 55%;
+  }
+
+  .item-type {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    width: 225px;
+  }
+}
